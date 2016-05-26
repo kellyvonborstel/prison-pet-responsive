@@ -15,6 +15,11 @@ nav, section {
   vertical-align: baseline;
 }
 
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
 /* HTML5 display-role reset for older browsers */
 
 article, aside, footer, header, nav, section {
@@ -108,7 +113,7 @@ a:focus {
 header {
   background-color: #aa0332;
   height: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .logo-icon {
@@ -377,20 +382,25 @@ body.menu-open {
 
 .sidebar {
   float: left;
-  margin-left: 22px;
+  clear: both;
 }
 
 /*-------------------------------------*/
 /* SIDEBAR - LINKS */
 
 .sidebar-link {
-  margin-top: 1em;
+  margin-left: 21px;
+  margin-bottom: 1em;
   text-decoration: none;
   display: block;
   color: #777;
   font-size: 1.2em;
   font-weight: 600;
   line-height: 60px;
+}
+
+.sidebar-link:last-child {
+  margin-bottom: 1.5em;
 }
 
 .sidebar-img {
@@ -406,30 +416,50 @@ body.menu-open {
 /*-------------------------------------*/
 /* SIDEBAR - HIRING */
 
-.sidebar {
-  float: left;
-  margin-left: 22px;
+.hiring-wrapper {
+  font-weight: 300;
+  letter-spacing: .02em;
+  color: #fff;
+  background-color: #81af68;
+  display: table;
+  border-collapse: collapse;
 }
 
-.sidebar-link {
-  margin-top: 1em;
-  text-decoration: none;
-  display: block;
-  color: #777;
-  font-size: 1.2em;
+.hiring {
+  margin: 25px;
+}
+
+.hiring h3 {
+  font-size: 1.5em;
   font-weight: 600;
-  line-height: 60px;
+  letter-spacing: 0;
+  color: #fff;
+  display: inline;
 }
 
-.sidebar-img {
-  float: left;
-  width: 60px;
-  margin-right: .7em;
+.m-dash {
+  padding-right: .35em;
+  padding-left: .15em;
 }
 
-.download {
-  display: none;
+.hiring p {
+  display: inline;
+  line-height: 1.6;
 }
 
+.hiring a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.hiring a:focus {
+  color: #2d7009;
+}
+
+@media screen and (min-width: 1030px) {
+  .hiring a:hover {
+    color: #2d7009;
+  }
+}
 
 
