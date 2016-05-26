@@ -67,6 +67,14 @@ h2 {
   line-height: 1.2;
 }
 
+a {
+  color: #d20b43;
+}
+
+a:focus {
+  color: #000;
+}
+
 @media screen and (min-width: 1030px) {
   body {
     font-weight: 300;
@@ -74,7 +82,11 @@ h2 {
 
   strong {
     font-weight: 400;
-  } 
+  }
+
+  a:hover {
+    color: #000;
+  }
 }
 
 @media screen and (min-width: 1120px) {
@@ -96,7 +108,7 @@ h2 {
 header {
   background-color: #aa0332;
   height: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .logo-icon {
@@ -112,7 +124,17 @@ header {
   display: none;
 }
 
+.nav-menu-open {
+  float: right;
+  margin-top: 67px;
+  margin-right: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.2em;
+}
+
 h1 {
+  clear: both;
   position: relative;
   top: 5px;
   width: 100%;
@@ -153,6 +175,12 @@ h1 {
     height: 200px;
     background: url(../images/header-service-dogs.jpg) no-repeat left;
     background-size: cover;
+  }
+
+  .nav-menu-open {
+    display: none;
+    padding: 0;
+    width: 0;
   }
 
   h1 {
@@ -254,15 +282,6 @@ body.menu-open {
   color: #fff;
 }
 
-.nav-menu-open {
-  float: right;
-  margin-top: 67px;
-  margin-right: 25px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 1.2em;
-}
-
 .nav-menu-close {
   display: block;
   padding: 13px 24px;
@@ -310,11 +329,10 @@ body.menu-open {
     background-color: #aa0332;
   }
 
-  a.nav-links:focus {
-    /*background-color: #aa0332;*/
-  }
+/*  a.nav-links:focus {
+    background-color: #aa0332;
+  }*/
   
-  .nav-menu-open,
   .nav-menu-close {
     display: none;
     padding: 0;
@@ -353,3 +371,65 @@ body.menu-open {
     padding: .6em 1.1em;
   }
 }
+
+/*-------------------------------------*/
+/* SIDEBAR */
+
+.sidebar {
+  float: left;
+  margin-left: 22px;
+}
+
+/*-------------------------------------*/
+/* SIDEBAR - LINKS */
+
+.sidebar-link {
+  margin-top: 1em;
+  text-decoration: none;
+  display: block;
+  color: #777;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.sidebar-img {
+  float: left;
+  width: 60px;
+  margin-right: .7em;
+}
+
+.download {
+  display: none;
+}
+
+/*-------------------------------------*/
+/* SIDEBAR - HIRING */
+
+.sidebar {
+  float: left;
+  margin-left: 22px;
+}
+
+.sidebar-link {
+  margin-top: 1em;
+  text-decoration: none;
+  display: block;
+  color: #777;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.sidebar-img {
+  float: left;
+  width: 60px;
+  margin-right: .7em;
+}
+
+.download {
+  display: none;
+}
+
+
+

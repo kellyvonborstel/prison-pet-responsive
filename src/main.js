@@ -19,8 +19,9 @@ $(function() {
     $('.nav-menu-open').disabled = false;
   });
 
-  // added click handlers to prevent images from disappearing on ios
-  
+  // added click handlers to prevent images from disappearing on ios;
+  // '-home' included because path is different for index.html
+
   $('.js-donate-home').on({
     mouseenter: function() {
       $('.js-donate-home').attr('src', 'images/donate-blue-dark.svg');
