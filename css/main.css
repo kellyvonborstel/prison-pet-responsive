@@ -413,10 +413,45 @@ body.menu-open {
   display: none;
 }
 
+@media screen and (min-width: 550px) and (max-width: 869px) {
+  .sidebar {
+    position: relative;
+  }
+
+  .sidebar .sidebar-links {
+    position: relative;
+    text-align: center;
+    padding: .5em;
+  }
+
+  .sidebar .sidebar-links a {
+    line-height: 1.4;
+    float: left;
+    width: 20%;
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    font-size: .85em;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 2.6em;
+  }
+
+  .sidebar-links strong {
+    font-weight: 400;
+  }
+
+  .sidebar-img {
+    float: none;
+    display: block;
+    margin: 0 auto .5em;
+  }
+}
+
 /*-------------------------------------*/
 /* SIDEBAR - HIRING */
 
 .hiring-wrapper {
+  clear: both;
   font-weight: 300;
   letter-spacing: .02em;
   color: #fff;
