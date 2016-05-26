@@ -96,7 +96,7 @@ h2 {
 header {
   background-color: #aa0332;
   height: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .logo-icon {
@@ -110,6 +110,22 @@ header {
 
 .header-image {
   display: none;
+}
+
+h1 {
+  position: relative;
+  top: 5px;
+  width: 100%;
+  background-color: #d20b43;
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .05em; 
 }
 
 @media screen and (min-width: 870px) {
@@ -137,6 +153,10 @@ header {
     height: 200px;
     background: url(../images/header-service-dogs.jpg) no-repeat left;
     background-size: cover;
+  }
+
+  h1 {
+    display: none;
   }
 }
 
@@ -266,6 +286,7 @@ body.menu-open {
     line-height: 3.3em;
     background-color: #d20b43;
     transform: none;
+    margin-bottom: 30px;
   }
 
   .nav-items {
@@ -290,7 +311,7 @@ body.menu-open {
   }
 
   a.nav-links:focus {
-    background-color: #aa0332;
+    /*background-color: #aa0332;*/
   }
   
   .nav-menu-open,
@@ -312,13 +333,13 @@ body.menu-open {
   a.nav-link {
     padding: .6em .9em;
   }
+
+  a.nav-link:hover {
+    background-color: #aa0332;
+  }
 }
 
 @media screen and (min-width: 1120px) {
-  a.nav-links:hover {
-    background-color: #aa0332;
-  }
-
   .nav-menu,
   .nav-items {
     position: relative;
