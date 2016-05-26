@@ -103,8 +103,35 @@ header {
   margin-left: 25px;
 }
 
-.logo-text {
+.logo {
   display: none;
+}
+
+@media screen and (min-width: 870px) {
+  header {
+    background-color: #fff;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .logo-icon {
+    display: none;
+  }
+
+  .logo {
+    float: left;
+    display: initial;
+    width: 18%;
+    margin: 5% 3.5% 0;
+  }
+
+  .header-image {
+    float: right;
+    width: 75%;
+    height: 200px;
+    background: url(../images/header-service-dogs.jpg) no-repeat left;
+    background-size: cover;
+  }
 }
 
 /*-------------------------------------*/
@@ -218,4 +245,10 @@ body.menu-open {
   /*position: relative;*/
   width: 17px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 870px) {
+  .nav-menu-open {
+    display: none;
+  }
 }
