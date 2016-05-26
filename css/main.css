@@ -57,7 +57,7 @@ body {
 
 p {
   margin-bottom: .8em;
-  font-size: 1em;
+  font-size: .95em;
 }
 
 strong {
@@ -65,11 +65,19 @@ strong {
 }
 
 h2 {
+  margin-bottom: .5em;
   font-size: 1.8em;
   font-weight: 600;
   color: #48a1b9;
-  margin-bottom: .5em;
-  line-height: 1.2;
+  line-height: 1.3;
+}
+
+h3 {
+  margin-bottom: .15em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.3;
 }
 
 a {
@@ -78,6 +86,24 @@ a {
 
 a:focus {
   color: #000;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  clear: both;
+}
+
+@media screen and (min-width: 650px) {
+  p {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 1030px) {
@@ -378,15 +404,12 @@ body.menu-open {
 }
 
 /*-------------------------------------*/
-/* SIDEBAR */
+/* SIDEBAR - LINKS */
 
 .sidebar {
   float: left;
   clear: both;
 }
-
-/*-------------------------------------*/
-/* SIDEBAR - LINKS */
 
 .sidebar-link {
   margin-left: 21px;
@@ -452,16 +475,19 @@ body.menu-open {
 
 .hiring-wrapper {
   clear: both;
+  /*width: 100%;*/
   font-weight: 300;
   letter-spacing: .02em;
   color: #fff;
   background-color: #81af68;
   display: table;
   border-collapse: collapse;
+  margin-bottom: 35px;
 }
 
 .hiring {
   margin: 25px;
+  clear: both;
 }
 
 .hiring h3 {
@@ -495,6 +521,35 @@ body.menu-open {
   .hiring a:hover {
     color: #2d7009;
   }
+}
+
+/*-------------------------------------*/
+/* MAIN CONTENT */
+
+.main-content {
+  padding: 25px;
+}
+
+.article-img {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: .3em;
+}
+
+.bark-bid{
+  height: 115px;
+}
+
+.dog-training{
+  height: 145px;
+}
+
+.calendar-2016{
+  height: 115px;
+}
+
+.camille{
+  height: 115px;
 }
 
 
