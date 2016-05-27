@@ -504,13 +504,14 @@ body.menu-open {
 }
 
 .hiring h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 600;
   letter-spacing: 0;
   color: #fff;
 }
 
 .hiring p {
+  font-size: .95em;
   line-height: 1.6;
 }
 
