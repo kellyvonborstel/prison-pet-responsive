@@ -489,7 +489,7 @@ body.menu-open {
 .hiring-wrapper {
   display: table;
   width: 100%;
-  margin-bottom: 33px;
+  margin-bottom: 15px;
   clear: both;
   font-weight: 300;
   letter-spacing: .02em;
@@ -518,6 +518,12 @@ body.menu-open {
 .hiring a {
   font-weight: 400;
   color: #fff;
+}
+
+@media screen and (min-width: 870px) {
+  .hiring-wrapper {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1030px) {
@@ -560,7 +566,7 @@ body.menu-open {
     float: right;
     width: 68%;
     padding: 0;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-right: 3.75%;
   }
 }
