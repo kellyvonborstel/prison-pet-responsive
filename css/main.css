@@ -733,6 +733,20 @@ address {
 }
 
 /*-------------------------------------*/
+/* FOR SMALL SCREEN ONLY */
+
+@media screen and (max-width: 549px) {
+  header.small {
+    margin-bottom: 5px;
+  }
+
+  .sidebar.small,
+  h1.small {
+    display: none;
+  }
+}
+
+/*-------------------------------------*/
 /* HOME PAGE */
 
 .article-img {
