@@ -1,6 +1,20 @@
 
 $(function() {
 
+  // change order of sidebar items when window is resized
+
+  $(window).resize(function () {
+    var windowWidth = $(window).width();
+
+    if (windowWidth >= 870) {
+      $(".hiring-wrapper").remove().insertBefore($(".sidebar-links"));
+    }
+    else {
+      $(".sidebar-links").remove().insertBefore($(".hiring-wrapper"));
+    }
+  }).trigger("resize");
+
+
   // slide menu for small screens
 
   $('.nav-menu-open').on('click', function(e) {
@@ -18,6 +32,7 @@ $(function() {
     $('.mask').removeClass('active');
     $('.nav-menu-open').disabled = false;
   });
+
 
   // added click handlers to prevent images from disappearing on ios;
   // '-home' included because path is different for index.html
