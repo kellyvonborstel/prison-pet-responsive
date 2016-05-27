@@ -255,14 +255,7 @@ h1 {
   letter-spacing: .08em;
   color: #fff;
   text-transform: uppercase;
-  cursor: pointer;
   background-color: #850126;
-  border: none;
-  border-radius: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .nav-menu-close:focus {
@@ -554,6 +547,18 @@ body.menu-open {
   padding: 25px 5%;
 }
 
+.adi {
+  float: left;
+  width: 85px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.ibpsa {
+  float: left;
+  width: 100px;
+}
+
 @media screen and (min-width: 600px) {
   .main-content {
     padding-right: 3.75%;
@@ -598,18 +603,6 @@ img.calendar-2016 {
 
 img.camille {
   height: 115px;
-}
-
-.adi {
-  float: left;
-  width: 85px;
-  margin-right: 25px;
-  margin-bottom: 30px;
-}
-
-.ibpsa {
-  float: left;
-  width: 100px;
 }
 
 @media screen and (min-width: 600px) {
@@ -676,17 +669,17 @@ img.camille {
 /* FOOTER */
 
 footer {
-  clear: both;
   margin: 0;
+  clear: both;
 }
 
 /*-------------------------------------*/
-/* ADDRESS */
+/* FOOTER - ADDRESS */
 
 address {
+  position: relative;
   padding: 1.2em;
   background-color: #d20b43;
-  position: relative;
 }
 
 .address {
@@ -704,10 +697,10 @@ address {
 
 @media screen and (min-width: 500px) {
   .social {
-    display: inline-block;
     position: absolute;
     bottom: 15px;
     right: 25px;
+    display: inline-block;
   }
 
   .social img {
@@ -722,17 +715,17 @@ address {
   }
 
   address {
-    text-align: center;
     padding: 0;
+    text-align: center;
   }
 
   .address {
-    height: 3.8em;
-    line-height: 3.9em;
     position: relative;
     display: inline;
+    height: 3.8em;
     padding-right: .6em;
     padding-left: .6em;
+    line-height: 3.9em;
   }
 
   .social {
@@ -742,22 +735,22 @@ address {
 
   .social img {
     position: relative;
+    top: 9px;
     display: inline-block;
     width: 1.8em;
-    top: 9px;
   }
 }
 
 @media screen and (min-width: 1030px) {
 
   .address {
-    font-size: .9em;
     padding: .6em 1em .7em;
+    font-size: .9em;
   }
 
   .address:hover {
-    background-color: #aa0332;
     color: #fff;
+    background-color: #aa0332;
   }
 }
 
@@ -770,11 +763,11 @@ address {
 }
 
 /*-------------------------------------*/
-/* COPYRIGHT */
+/* FOOTER - COPYRIGHT */
 
 .copy-credit {
-  margin: 0 auto;
   padding: 1.2em;
+  margin: 0 auto;
   font-size: .85em;
 }
 
