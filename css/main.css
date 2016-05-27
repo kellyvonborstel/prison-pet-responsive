@@ -433,8 +433,9 @@ body.menu-open {
 .sidebar-link {
   display: block;
   margin-bottom: 1em;
-  margin-left: 22px;
-  font-size: 1.1em;
+  margin-left: 21px;
+  font-size: 1.2em;
+  font-weight: 600;
   line-height: 60px;
   color: #777;
   text-decoration: none;
@@ -469,6 +470,7 @@ body.menu-open {
     margin: 0;
     margin-bottom: 2.6em;
     font-size: .85em;
+    font-weight: 400;
     line-height: 1.4;
   }
 
@@ -490,7 +492,6 @@ body.menu-open {
   .sidebar .sidebar-links a {
     float: none;
     width: 100%;
-    font-weight: 400;
     text-align: center;
   }
 
@@ -748,6 +749,7 @@ address {
 }
 
 @media screen and (min-width: 1030px) {
+
   .address {
     font-size: .9em;
     padding: .6em 1em .7em;
