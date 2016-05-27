@@ -532,6 +532,7 @@ body.menu-open {
 .main-content {
   position: relative;
   padding: 25px 5%;
+  clear: both;
 }
 
 .adi {
@@ -555,6 +556,7 @@ body.menu-open {
 
 @media screen and (min-width: 870px) {
   .main-content {
+    clear: none;
     float: right;
     width: 68%;
     padding: 0;
