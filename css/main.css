@@ -28,16 +28,19 @@ ul {
 /*-------------------------------------*/
 /* GLOBAL */
 
-*, *::before, *::after {
+html {
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 html, body {
-  /*position: relative;*/
   width: 100%;
   height: 100%;
-  /*overflow-x: hidden; */
-  /*-webkit-backface-visibility: hidden;*/
+  overflow-x: hidden; 
+  -webkit-backface-visibility: hidden;
 }
 
 body {
@@ -78,10 +81,6 @@ h3 {
 a {
   color: #d20b43;
 }
-
-/*a:focus {
-  color: #000;
-}*/
 
 hr {
   margin: 30px 0;
@@ -194,14 +193,14 @@ h1 {
   }
 
   .logo {
-    display: initial;
+    display: inline;
     float: left;
     width: 14%;
     margin: 5% 3% 0;
   }
 
   .header-image {
-    display: initial;
+    display: block;
     float: right;
     width: 80%;
     height: 200px;
@@ -257,10 +256,10 @@ h1 {
   text-transform: uppercase;
   background-color: #850126;
 }
-
+/*
 .nav-menu-close:focus {
   outline: none;
-}
+}*/
 
 /* When menu is active, hide overflow on body to prevent scrolling */
 body.menu-open {
@@ -302,10 +301,6 @@ body.menu-open {
   color: #e0d4d7;
   text-decoration: none;
 }
-
-/*.nav-link:focus {
-  color: #fff;
-}*/
 
 .nav-menu-close {
   display: block;
@@ -353,10 +348,6 @@ body.menu-open {
   a.current-page {
     background-color: #aa0332;
   }
-
-/*  a.nav-links:focus {
-    background-color: #aa0332;
-  }*/
   
   .nav-menu-close {
     display: none;
@@ -489,7 +480,7 @@ body.menu-open {
   }
 
   .download {
-    display: initial;
+    display: inline;
   }
 }
 
@@ -528,10 +519,6 @@ body.menu-open {
   font-weight: 400;
   color: #fff;
 }
-
-/*.hiring a:focus {
-  color: #2d7009;
-}*/
 
 @media screen and (min-width: 1030px) {
   .hiring a:hover {
@@ -651,11 +638,6 @@ img.camille {
     text-decoration: none;
     border: 1px solid #d20b43;
   }
-
-/*  .article-link:focus {
-    color: #d20b43;
-    background-color: #ffeeee;
-  }*/
 }
 
 @media screen and (min-width: 1030px) {
@@ -729,7 +711,7 @@ address {
   }
 
   .social {
-    position: initial;
+    position: static;
     margin-left: .6em;
   }
 
