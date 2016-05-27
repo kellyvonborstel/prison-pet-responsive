@@ -255,13 +255,9 @@ h1 {
   text-transform: uppercase;
   background-color: #850126;
 }
-/*
-.nav-menu-close:focus {
-  outline: none;
-}*/
 
 /* When menu is active, hide overflow on body to prevent scrolling */
-body.menu-open {
+.menu-open {
   overflow: hidden;
 }
 
