@@ -1,4 +1,4 @@
-/*-------------------------------------*/
+
 /* MODIFIED MEYER RESET */
 
 html, body, div, span,
@@ -433,9 +433,8 @@ body.menu-open {
 .sidebar-link {
   display: block;
   margin-bottom: 1em;
-  margin-left: 21px;
-  font-size: 1.2em;
-  font-weight: 600;
+  margin-left: 22px;
+  font-size: 1.1em;
   line-height: 60px;
   color: #777;
   text-decoration: none;
@@ -470,7 +469,6 @@ body.menu-open {
     margin: 0;
     margin-bottom: 2.6em;
     font-size: .85em;
-    font-weight: 400;
     line-height: 1.4;
   }
 
@@ -492,6 +490,7 @@ body.menu-open {
   .sidebar .sidebar-links a {
     float: none;
     width: 100%;
+    font-weight: 400;
     text-align: center;
   }
 
@@ -566,7 +565,8 @@ body.menu-open {
     float: right;
     width: 68%;
     padding: 0;
-    margin: 35px 3.75% 30px 0;
+    margin-top: 35px;
+    margin-right: 3.75%;
   }
 }
 
@@ -671,7 +671,6 @@ img.camille {
   }
 }
 
-
 /*-------------------------------------*/
 /* FOOTER */
 
@@ -679,6 +678,9 @@ footer {
   clear: both;
   margin: 0;
 }
+
+/*-------------------------------------*/
+/* ADDRESS */
 
 address {
   padding: 1.2em;
@@ -699,6 +701,75 @@ address {
   display: none;
 }
 
+@media screen and (min-width: 500px) {
+  .social {
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+  }
+
+  .social img {
+    width: 2.2em;
+    margin-left: 7px;
+  }
+}
+
+@media screen and (min-width: 870px) {
+  footer {
+    text-align: center;
+  }
+
+  address {
+    text-align: center;
+    padding: 0;
+  }
+
+  .address {
+    height: 3.8em;
+    line-height: 3.9em;
+    position: relative;
+    display: inline;
+    padding-right: .6em;
+    padding-left: .6em;
+  }
+
+  .social {
+    position: initial;
+    margin-left: .6em;
+  }
+
+  .social img {
+    position: relative;
+    display: inline-block;
+    width: 1.8em;
+    top: 9px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .address {
+    font-size: .9em;
+    padding: .6em 1em .7em;
+  }
+
+  .address:hover {
+    background-color: #aa0332;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  address {
+    position: relative;
+    width: 102%;
+    margin-left: -1%;
+  } 
+}
+
+/*-------------------------------------*/
+/* COPYRIGHT */
+
 .copy-credit {
   margin: 0 auto;
   padding: 1.2em;
@@ -715,7 +786,6 @@ address {
 }
 
 .credit {
-  /*margin: 0 auto 1.2em;*/
   padding-bottom: 20px;
 }
 
@@ -731,18 +801,6 @@ address {
 }
 
 @media screen and (min-width: 500px) {
-  .social {
-    display: inline-block;
-    position: absolute;
-    bottom: 15px;
-    right: 25px;
-  }
-
-  .social img {
-    width: 2.2em;
-    margin-left: 7px;
-  }
-
   .copy-credit {
     text-align: center;
   }
