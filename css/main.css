@@ -567,90 +567,6 @@ h1 {
 }
 
 /*-------------------------------------*/
-/* HOME PAGE */
-
-.article-img {
-  float: right;
-  margin-bottom: .3em;
-  margin-left: 1em;
-}
-
-.article {
-  margin-bottom: .3em;
-}
-
-img.bark-bid {
-  height: 115px;
-}
-
-img.dog-training {
-  height: 145px;
-}
-
-img.calendar-2016 {
-  height: 115px;
-}
-
-img.camille {
-  height: 115px;
-}
-
-@media screen and (min-width: 600px) {
-  .article-img {
-    display: none;
-  }
-
-  .main-content article {
-    display: table;
-    margin: .2em 0;
-    background-repeat: no-repeat;
-  }
-
-  .bark-bid {
-    min-height: 220px;
-    padding-left: 330px;
-    background: url(../images/bark-bid-2016.jpg) left center;
-  }
-
-  .dog-training {
-    min-height: 250px;
-    padding-right: 200px;
-    background: url(../images/dog-training.jpg) right center;
-  }
-
-  .calendar-2016 {
-    min-height: 220px;
-    padding-left: 315px;
-    background: url(../images/calendar-2016.jpg) left center;
-  }
-
-  .camille {
-    min-height: 220px;
-    padding-right: 285px;
-    background: url(../images/camille.jpg) right center;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .article-link {
-    display: inline-block;
-    padding: .3em .7em .4em;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    color: #d20b43;
-    text-decoration: none;
-    border: 1px solid #d20b43;
-  }
-}
-
-@media screen and (min-width: 1030px) {
-  .article-link:hover {
-    color: #d20b43;
-    background-color: #ffeeee;
-  }
-}
-
-/*-------------------------------------*/
 /* FOOTER */
 
 footer {
@@ -798,5 +714,89 @@ address {
 @media screen and (min-width: 1030px) {
   .credit a:hover {
     color: #000;
+  }
+}
+
+/*-------------------------------------*/
+/* HOME PAGE */
+
+.article-img {
+  float: right;
+  margin-bottom: .3em;
+  margin-left: 1em;
+}
+
+.article {
+  margin-bottom: .3em;
+}
+
+img.bark-bid {
+  height: 115px;
+}
+
+img.dog-training {
+  height: 145px;
+}
+
+img.calendar-2016 {
+  height: 115px;
+}
+
+img.camille {
+  height: 115px;
+}
+
+@media screen and (min-width: 600px) {
+  .article-img {
+    display: none;
+  }
+
+  .main-content article {
+    display: table;
+    margin: .2em 0;
+    background-repeat: no-repeat;
+  }
+
+  .bark-bid {
+    min-height: 220px;
+    padding-left: 330px;
+    background: url(../images/bark-bid-2016.jpg) left center;
+  }
+
+  .dog-training {
+    min-height: 250px;
+    padding-right: 200px;
+    background: url(../images/dog-training.jpg) right center;
+  }
+
+  .calendar-2016 {
+    min-height: 220px;
+    padding-left: 315px;
+    background: url(../images/calendar-2016.jpg) left center;
+  }
+
+  .camille {
+    min-height: 220px;
+    padding-right: 285px;
+    background: url(../images/camille.jpg) right center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .article-link {
+    display: inline-block;
+    padding: .3em .7em .4em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: #d20b43;
+    text-decoration: none;
+    border: 1px solid #d20b43;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .article-link:hover {
+    color: #d20b43;
+    background-color: #ffeeee;
   }
 }
