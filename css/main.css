@@ -1024,30 +1024,14 @@ p.thank-you {
 
 /*-------------------------------------*/
 /* VOLUNTEER PAGE */
-
-a.time-sheet {
-  display: block;
-  font-size: 1.4em;
-  margin-bottom: 1em;
-  color: #999;
-  text-decoration: none;
-  font-weight: 400;
-}
+/* BOARD AND GROOM PAGE */
+/* CONTACT US PAGE */
 
 .opportunities {
   font-size: 1.4em;
   margin-top: 1.5em;
   margin-bottom: -.4em;
 }
-
-@media screen and (min-width: 1030px) {
-  .opportunites:hover {
-    color: #555;
-  }
-}
-
-/*-------------------------------------*/
-/* BOARD AND GROOM PAGE */
 
 .question {
   margin-bottom: 0;
@@ -1059,17 +1043,28 @@ a.time-sheet {
   margin-top: 0;
 }
 
-a.call-us {
+.time-sheet,
+.call-us,
+.contact {
+  color: #999;
+  text-decoration: none;
+}
+
+.time-sheet,
+.call-us {
   display: block;
   font-size: 1.4em;
   margin-bottom: 1em;
-  color: #999;
-  text-decoration: none;
   font-weight: 400;
 }
 
 @media screen and (min-width: 1030px) {
-  .call-us:hover {
+  .time-sheet:hover,
+  .call-us:hover,
+  .contact:hover {
     color: #555;
   }
 }
+
+/*-------------------------------------*/
+/* CALENDAR PAGE */
