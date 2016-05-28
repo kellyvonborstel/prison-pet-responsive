@@ -947,33 +947,6 @@ img.camille {
   font-style: italic;
 }
 
-.fred-meyer img {
-  width: 140px;
-  height: 70px;
-}
-
-.wooftrax img {
-  width: 100px;
-  height: 100px;
-}
-
-.go-fund-me img {
-  width: 155px;
-}
-
-.amazon-smile img {
-  /*width: 145px;*/
-}
-
-.kuranda img {
-  width: 120px;
-}
-
-.pause-for-cause img {
-  width: 136px;
-  height: 38px;
-}
-
 .donate-content .column1 hr {
   margin-top: 20px;
 }
