@@ -904,6 +904,12 @@ img.camille {
   height: 70px;
 }
 
+.donate-options img {
+  position: relative;
+  bottom: 10px;
+  width: 50px;
+}
+
 .paypal {
   margin-top: 30px;
 }
@@ -912,24 +918,18 @@ img.camille {
   margin-bottom: -20px;
 }
 
-.donate-options img {
-  position: relative;
-  bottom: 10px;
-  width: 50px;
-}
-
 .donate-content strong {
   color: #555;
 }
 
-.pause-for-cause span {
-  font-style: italic;
-}
-
-.donate-content img {
+.donate-content .column1 img {
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
+}
+
+.pause-for-cause span {
+  font-style: italic;
 }
 
 .fred-meyer img {
@@ -960,6 +960,10 @@ img.camille {
   margin-top: 20px;
 }
 
+.donate-content .column2 {
+  margin-bottom: 20px;
+}
+
 .bark-bid-container {
   text-align: center;
 }
@@ -983,7 +987,7 @@ img.bark-bid-logo {
   font-size: 1.2em;
 }
 
-img.thank-you-img {
+img.thank-you {
   float: none;
   width: 95%;
   margin: 0;
