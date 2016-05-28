@@ -1080,12 +1080,12 @@ p.thank-you {
 /*-------------------------------------*/
 /* BARK AND BID PAGE */
 
-.bark-bid-image {
+.bark-bid-announce {
   width: 100%;
   padding-bottom: 64.96063%;
   margin-bottom: 2em;
-  background: url(../images/bark-bid-img-small.jpg) no-repeat top;
-  background-size: cover;
+  background: url(../images/bark-bid-announce.svg) no-repeat center;
+  background-size: contain;
 }
 
 .location {
@@ -1093,10 +1093,11 @@ p.thank-you {
 }
 
 @media screen and (min-width: 550px) {
-  .bark-bid-image {
+  .bark-bid-announce {
     padding-bottom: 54.875%;
-    border: 1px solid #ccc;
-    background-image: url(../images/bark-bid-img.jpg);
+    border: 1px solid #666;
+    background-image: url(../images/bark-bid-announce-dog.svg);
+    background-size: cover;
   }
 
   .image-divider {
@@ -1110,8 +1111,9 @@ p.thank-you {
 
   .location {
     display: table-cell;
-    width: 55%;
-    padding: 0 3%;
+    width: 60%;
+    padding-left: 25px;
     vertical-align: middle;
+    margin-bottom: 0;
   }
 }
