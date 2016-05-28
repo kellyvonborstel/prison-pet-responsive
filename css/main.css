@@ -891,7 +891,7 @@ img.camille {
 }
 
 /*-------------------------------------*/
-/* IN THE NEWS PAGE */
+/* DONATE PAGE */
 
 .donate-options a {
   display: block;
@@ -907,12 +907,12 @@ img.camille {
 }
 
 .donate-options img {
-  width: 50px;
   position: relative;
   bottom: 10px;
+  width: 50px;
 }
 
-.donate-page strong {
+.donate-content strong {
   color: #555;
 }
 
@@ -920,7 +920,7 @@ img.camille {
   font-style: italic;
 }
 
-.donate-page img {
+.donate-content img {
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -950,7 +950,7 @@ img.camille {
   width: 135px;
 }
 
-.donate-page .column1 hr {
+.donate-content .column1 hr {
   margin-top: 20px;
 }
 
@@ -966,11 +966,11 @@ img.bark-bid-logo {
 
 .bark-bid-sponsors {
   height: 100%;
-  border-radius: 10px;
-  background-color: #222;
-  text-align: center;
-  font-size: .82em;
   margin-bottom: 40px;
+  border-radius: 10px;
+  font-size: .82em;
+  text-align: center;
+  background-color: #222;
 }
 
 .bark-bid-sponsors h5 {
@@ -978,18 +978,18 @@ img.bark-bid-logo {
 }
 
 img.thank-you-img {
-  margin: 0;
   float: none;
   width: 95%;
+  margin: 0;
 }
 
 .sponsor-list {
   position: relative;
   top: 10px;
   padding: 2em;
-  background-color: #fff;
-  border-radius: 10px;
   margin: 10px 2.5% 20px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 p.thank-you {
@@ -999,15 +999,39 @@ p.thank-you {
 }
 
 @media screen and (min-width: 600px) {
-  .donate-page .column1 {
+  .donate-content .column1 {
     float: left;
     width: 43%;
     margin-right: 4%;
   }
 
-  .donate-page .column2 {
+  .donate-content .column2 {
     float: right;
     width: 50%;
     margin-right: 0;
+  }
+}
+
+/*-------------------------------------*/
+/* VOLUNTEER PAGE */
+
+a.time-sheet {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  color: #999;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.opportunities {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: -.4em;
+}
+
+@media screen and (min-width: 1030px) {
+  .volunteer h3 a:hover {
+    color: #555;
   }
 }
