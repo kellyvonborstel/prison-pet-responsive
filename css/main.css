@@ -1073,6 +1073,45 @@ p.thank-you {
 }
 
 .date {
-  font-weight: 400;
   padding-right: .4em;
+  font-weight: 400;
+}
+
+/*-------------------------------------*/
+/* BARK AND BID PAGE */
+
+.bark-bid-image {
+  width: 100%;
+  padding-bottom: 64.96063%;
+  margin-bottom: 2em;
+  background: url(../images/bark-bid-img-small.jpg) no-repeat top;
+  background-size: cover;
+}
+
+.location {
+  padding-top: 1em;
+}
+
+@media screen and (min-width: 550px) {
+  .bark-bid-image {
+    padding-bottom: 54.875%;
+    border: 1px solid #ccc;
+    background-image: url(../images/bark-bid-img.jpg);
+  }
+
+  .image-divider {
+    display: none;
+  }
+  
+  .convention-center {
+    display: table;
+    border-collapse: collapse;
+  }
+
+  .location {
+    display: table-cell;
+    width: 55%;
+    padding: 0 3%;
+    vertical-align: middle;
+  }
 }
