@@ -889,3 +889,125 @@ img.camille {
     margin-right: 7em;
   }
 }
+
+/*-------------------------------------*/
+/* IN THE NEWS PAGE */
+
+.donate-options a {
+  display: block;
+  height: 70px;
+}
+
+.paypal {
+  margin-top: 30px;
+}
+
+.mail-in {
+  margin-bottom: -20px;
+}
+
+.donate-options img {
+  width: 50px;
+  position: relative;
+  bottom: 10px;
+}
+
+.donate-page strong {
+  color: #555;
+}
+
+.pause-for-cause span {
+  font-style: italic;
+}
+
+.donate-page img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.fred-meyer img {
+  width: 140px;
+}
+
+.wooftrax img {
+  width: 100px;
+}
+
+.go-fund-me img {
+  width: 155px;
+}
+
+.amazon-smile img {
+  width: 145px;
+}
+
+.kuranda img {
+  width: 120px;
+}
+
+.pause-for-cause img {
+  width: 135px;
+}
+
+.donate-page .column1 hr {
+  margin-top: 20px;
+}
+
+.bark-bid-container {
+  text-align: center;
+}
+
+img.bark-bid-logo {
+  float: none;
+  width: 250px;
+  margin-bottom: -22px;
+}
+
+.bark-bid-sponsors {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #222;
+  text-align: center;
+  font-size: .82em;
+  margin-bottom: 40px;
+}
+
+.bark-bid-sponsors h5 {
+  font-size: 1.2em;
+}
+
+img.thank-you-img {
+  margin: 0;
+  float: none;
+  width: 95%;
+}
+
+.sponsor-list {
+  position: relative;
+  top: 10px;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px 2.5% 20px;
+}
+
+p.thank-you {
+  padding-top: 1em;
+  margin-bottom: .5em;
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 600px) {
+  .donate-page .column1 {
+    float: left;
+    width: 43%;
+    margin-right: 4%;
+  }
+
+  .donate-page .column2 {
+    float: right;
+    width: 50%;
+    margin-right: 0;
+  }
+}
