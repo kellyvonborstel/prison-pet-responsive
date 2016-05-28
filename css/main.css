@@ -1041,7 +1041,35 @@ a.time-sheet {
 }
 
 @media screen and (min-width: 1030px) {
-  .volunteer h3 a:hover {
+  .opportunites:hover {
+    color: #555;
+  }
+}
+
+/*-------------------------------------*/
+/* BOARD AND GROOM PAGE */
+
+.question {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.vaccines,
+.days {
+  margin-top: 0;
+}
+
+a.call-us {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  color: #999;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1030px) {
+  .call-us:hover {
     color: #555;
   }
 }
