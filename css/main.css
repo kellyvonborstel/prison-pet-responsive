@@ -1028,9 +1028,9 @@ p.thank-you {
 /* CONTACT US PAGE */
 
 .opportunities {
-  font-size: 1.4em;
   margin-top: 1.5em;
   margin-bottom: -.4em;
+  font-size: 1.4em;
 }
 
 .question {
@@ -1053,18 +1053,26 @@ p.thank-you {
 .time-sheet,
 .call-us {
   display: block;
-  font-size: 1.4em;
   margin-bottom: 1em;
+  font-size: 1.4em;
   font-weight: 400;
 }
 
 @media screen and (min-width: 1030px) {
   .time-sheet:hover,
-  .call-us:hover,
-  .contact:hover {
+  .call-us:hover {
     color: #555;
   }
 }
 
 /*-------------------------------------*/
 /* CALENDAR PAGE */
+
+.events li {
+  margin-left: 2em;
+}
+
+.date {
+  font-weight: 400;
+  padding-right: .4em;
+}
