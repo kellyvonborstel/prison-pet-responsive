@@ -339,6 +339,7 @@ h1 {
 
 .menu-icon {
   width: 17px;
+  height: 17px;
   margin-right: 10px;
 }
 
@@ -637,6 +638,7 @@ address {
 
   .social img {
     width: 2.2em;
+    height: 2.2em;
     margin-left: 7px;
   }
 }
@@ -934,10 +936,12 @@ img.camille {
 
 .fred-meyer img {
   width: 140px;
+  height: 70px;
 }
 
 .wooftrax img {
   width: 100px;
+  height: 100px;
 }
 
 .go-fund-me img {
@@ -945,7 +949,7 @@ img.camille {
 }
 
 .amazon-smile img {
-  width: 145px;
+  /*width: 145px;*/
 }
 
 .kuranda img {
@@ -953,7 +957,8 @@ img.camille {
 }
 
 .pause-for-cause img {
-  width: 135px;
+  width: 136px;
+  height: 38px;
 }
 
 .donate-content .column1 hr {
@@ -971,16 +976,7 @@ img.camille {
 img.bark-bid-logo {
   float: none;
   width: 250px;
-  margin-bottom: -22px;
-}
-
-.bark-bid-sponsors {
-  height: 100%;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  font-size: .82em;
-  text-align: center;
-  background-color: #222;
+  margin-bottom: -11px;
 }
 
 .bark-bid-sponsors h5 {
@@ -994,11 +990,12 @@ img.thank-you {
 }
 
 .sponsor-list {
-  position: relative;
-  top: 10px;
   padding: 2em;
-  margin: 10px 2.5% 20px;
-  border-radius: 10px;
+  margin-bottom: 40px;
+  font-size: .82em;
+  text-align: center;
+  border: 6px solid #222;
+  border-radius: 12px;
   background-color: #fff;
 }
 
