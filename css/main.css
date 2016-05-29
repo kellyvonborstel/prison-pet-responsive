@@ -488,11 +488,11 @@ h1 {
   .sidebar .sidebar-links a {
     float: left;
     width: 20%;
-    padding-right: 1.4em;
-    padding-left: 1.4em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
     margin: 0;
     margin-bottom: 2.6em;
-    font-size: .85em;
+    font-size: .9em;
     font-weight: 400;
     line-height: 1.4;
   }
