@@ -828,16 +828,10 @@ img.camille {
     background: url(../images/dog-training.jpg) right center;
   }
 
-  .calendar-2016 {
-    min-height: 220px;
-    padding-left: 315px;
-    background: url(../images/calendar-2016.jpg) left center;
-  }
-
   .camille {
     min-height: 220px;
-    padding-right: 285px;
-    background: url(../images/camille.jpg) right center;
+    padding-left: 285px;
+    background: url(../images/camille.jpg) left center;
   }
 }
 
