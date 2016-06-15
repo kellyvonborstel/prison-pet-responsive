@@ -1,3 +1,5 @@
+@import "variables";
+
 /* MODIFIED MEYER RESET */
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, ul, li, article, aside, footer, header, nav, section {
@@ -46,7 +48,7 @@ body {
   overflow-x: hidden;
   -webkit-backface-visibility: hidden;
   font: 400 16px/1.5 'Open Sans', sans-serif;
-  color: #777;
+  color: $grey4;
   /* momentum scrolling ios */
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -68,7 +70,7 @@ h2 {
   font-size: 1.8em;
   font-weight: 600;
   line-height: 1.3;
-  color: #48a1b9;
+  color: $blue;
 }
 
 h3 {
@@ -76,13 +78,13 @@ h3 {
   font-size: .95em;
   font-weight: 600;
   line-height: 1.4;
-  color: #555;
+  color: $grey6;
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: 400;
-  color: #48a1b9;
+  color: $blue;
 }
 
 h5 {
@@ -91,24 +93,24 @@ h5 {
   font-size: 1.1em;
   font-weight: 400;
   line-height: 1.4;
-  color: #555;
+  color: $grey6;
 }
 
 h6 {
   font-weight: 600;
   line-height: 1.4;
-  color: #555;
+  color: $grey6;
 }
 
 a {
-  color: #d20b43;
+  color: $red-light;
 }
 
 hr {
   margin: 30px 0;
   clear: both;
   border: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $grey2;
 }
 
 ul {
@@ -144,19 +146,19 @@ ul {
     font-weight: 400;
   }
   a:hover {
-    color: #000;
+    color: $black;
   }
 }
 
 @media screen and (min-width: 1120px) {
   body {
-    background-color: #ccc;
+    background-color: $grey2;
   }
   .page-wrapper {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: $white;
   }
 }
 
@@ -166,7 +168,7 @@ ul {
 header {
   height: 100px;
   margin-bottom: 80px;
-  background-color: #aa0332;
+  background-color: $red-medium;
 }
 
 .logo-icon {
@@ -183,7 +185,7 @@ header {
   margin-top: 64px;
   margin-right: 25px;
   font-size: 1.2em;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
 }
 
@@ -198,17 +200,17 @@ h1 {
   font-weight: 400;
   line-height: 50px;
   letter-spacing: .05em;
-  color: #fff;
+  color: $white;
   text-align: left;
   text-transform: uppercase;
-  background-color: #d20b43;
+  background-color: $red-light;
 }
 
 @media screen and (min-width: 870px) {
   header {
     height: 200px;
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: $white;
   }
   .logo-icon {
     display: none;
@@ -255,7 +257,7 @@ h1 {
   height: 100%;
   overflow-y: scroll;
   text-align: left;
-  background-color: #aa0332;
+  background-color: $red-medium;
   -webkit-transform: translateX(250px);
   -moz-transform: translateX(250px);
   -ms-transform: translateX(250px);
@@ -276,9 +278,9 @@ h1 {
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: .08em;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
-  background-color: #850126;
+  background-color: $red-dark;
 }
 
 /* When menu is active, hide overflow on body to prevent scrolling */
@@ -295,7 +297,7 @@ h1 {
   width: 0;
   height: 0;
   overflow: hidden;
-  background-color: #000;
+  background-color: $black;
   opacity: 0;
   transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
   &.active {
@@ -308,7 +310,7 @@ h1 {
 
 .nav-item {
   display: block;
-  border-bottom: solid 1px #e0d4d7;
+  border-bottom: solid 1px $pink-grey;
   &:first-child {
     border-top: none;
   }
@@ -317,7 +319,7 @@ h1 {
 .nav-link {
   display: block;
   padding: 11px 24px;
-  color: #e0d4d7;
+  color: $pink-grey;
   text-decoration: none;
 }
 
@@ -348,7 +350,7 @@ h1 {
     margin-bottom: 30px;
     overflow-y: hidden;
     line-height: 3.3em;
-    background-color: #d20b43;
+    background-color: $red-light;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
@@ -366,11 +368,11 @@ h1 {
     display: inline;
     padding: .6em .45em;
     font-size: .85em;
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
   .current-page {
-    background-color: #aa0332;
+    background-color: $red-medium;
   }
   .nav-menu-close {
     display: none;
@@ -390,7 +392,7 @@ h1 {
   a.nav-link {
     padding: .6em .9em;
     &:hover {
-      background-color: #aa0332;
+      background-color: $red-medium;
     }
   }
 }
@@ -442,7 +444,7 @@ h1 {
   margin-left: 21px;
   font-size: 1.1em;
   line-height: 60px;
-  color: #777;
+  color: $grey4;
   text-decoration: none;
   &:last-child {
     margin-bottom: 1.5em;
@@ -487,7 +489,7 @@ h1 {
     padding-top: 35px;
     clear: both;
     text-align: center;
-    background-color: #eee;
+    background-color: $grey1;
     a {
       float: none;
       width: 100%;
@@ -509,8 +511,8 @@ h1 {
   clear: both;
   font-weight: 300;
   letter-spacing: .02em;
-  color: #fff;
-  background-color: #81af68;
+  color: $white;
+  background-color: $green-medium;
   border-collapse: collapse;
 }
 
@@ -521,7 +523,7 @@ h1 {
     font-size: 1.4em;
     font-weight: 600;
     letter-spacing: 0;
-    color: #fff;
+    color: $white;
   }
   p {
     font-size: .95em;
@@ -529,7 +531,7 @@ h1 {
   }
   a {
     font-weight: 400;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -541,7 +543,7 @@ h1 {
 
 @media screen and (min-width: 1030px) {
   .hiring a:hover {
-    color: #c7dcbc;
+    color: $green-light;
   }
 }
 
@@ -597,7 +599,7 @@ footer {
 address {
   position: relative;
   padding: 1.2em;
-  background-color: #d20b43;
+  background-color: $red-light;
 }
 
 .address {
@@ -605,7 +607,7 @@ address {
   padding: .3em;
   padding-bottom: .2em;
   font-size: .85em;
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -658,8 +660,8 @@ address {
     padding: .6em 1em .7em;
     font-size: .9em;
     &:hover {
-      color: #fff;
-      background-color: #aa0332;
+      color: $white;
+      background-color: $red-medium;
     }
   }
 }
@@ -693,7 +695,7 @@ address {
 .credit {
   padding-bottom: 20px;
   a {
-    color: #777;
+    color: $grey4;
   }
 }
 
@@ -721,7 +723,7 @@ address {
 
 @media screen and (min-width: 1030px) {
   .credit a:hover {
-    color: #000;
+    color: $black;
   }
 }
 
@@ -794,16 +796,16 @@ img {
     padding: .3em .7em .4em;
     margin-top: .5em;
     margin-bottom: .5em;
-    color: #d20b43;
+    color: $red-light;
     text-decoration: none;
-    border: 1px solid #d20b43;
+    border: 1px solid $red-light;
   }
 }
 
 @media screen and (min-width: 1030px) {
   .article-link:hover {
-    color: #d20b43;
-    background-color: #ffeeee;
+    color: $red-light;
+    background-color: $pink;
   }
 }
 
@@ -812,7 +814,7 @@ img {
 
 .title {
   font-style: italic;
-  color: #999;
+  color: $grey3;
 }
 
 .board-wrapper, .staff-wrapper {
@@ -877,7 +879,7 @@ img {
 
 .donate-content {
   strong {
-    color: #555;
+    color: $grey6;
   }
   .column1 img {
     float: left;
@@ -924,8 +926,8 @@ img.thank-you {
   margin-bottom: 40px;
   font-size: .82em;
   text-align: center;
-  background-color: #fff;
-  border: 6px solid #222;
+  background-color: $white;
+  border: 6px solid $grey7;
   border-radius: 12px;
 }
 
@@ -971,7 +973,7 @@ p.thank-you {
 }
 
 .time-sheet, .call-us, .contact {
-  color: #999;
+  color: $grey3;
   text-decoration: none;
 }
 
@@ -984,7 +986,7 @@ p.thank-you {
 
 @media screen and (min-width: 1030px) {
   .time-sheet:hover, .call-us:hover {
-    color: #555;
+    color: $grey6;
   }
 }
 
@@ -1018,7 +1020,7 @@ p.thank-you {
 @media screen and (min-width: 550px) {
   .bark-bid-announce {
     padding-bottom: 54.875%;
-    border: 1px solid #666;
+    border: 1px solid $grey5;
     background-image: url(../images/bark-bid-announce-dog.svg);
     background-size: cover;
   }
