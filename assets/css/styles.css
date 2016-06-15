@@ -1,12 +1,5 @@
-
 /* MODIFIED MEYER RESET */
-
-html, body, div, span,
-h1, h2, h3, h4, h5, h6,
-p, a, address, em, img,
-strong, ul, li, article,
-aside, footer, header,
-nav, section {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, ul, li, article, aside, footer, header, nav, section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,7 +9,6 @@ nav, section {
 }
 
 /* HTML5 display-role reset for older browsers */
-
 article, aside, footer, header, nav, section {
   display: block;
 }
@@ -27,16 +19,19 @@ ul {
 
 /*-------------------------------------*/
 /* GLOBAL */
-
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+* {
   box-sizing: inherit;
 }
 
-html, body {
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -44,6 +39,10 @@ html, body {
 }
 
 body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
   font: 400 16px/1.5 'Open Sans', sans-serif;
   color: #777;
   /* momentum scrolling ios */
@@ -128,7 +127,6 @@ ul {
   p {
     font-size: 1em;
   }
-
   h3 {
     font-size: 1.3em;
     font-weight: 400;
@@ -140,11 +138,9 @@ ul {
   body {
     font-weight: 300;
   }
-
   strong {
     font-weight: 400;
   }
-
   a:hover {
     color: #000;
   }
@@ -154,7 +150,6 @@ ul {
   body {
     background-color: #ccc;
   }
-
   .page-wrapper {
     width: 90%;
     max-width: 1100px;
@@ -165,7 +160,6 @@ ul {
 
 /*-------------------------------------*/
 /* HEADER */
-
 header {
   height: 100px;
   margin-bottom: 80px;
@@ -177,11 +171,7 @@ header {
   margin-left: 25px;
 }
 
-.logo {
-  display: none;
-}
-
-.header-image {
+.logo, .header-image {
   display: none;
 }
 
@@ -204,7 +194,7 @@ h1 {
   font-size: 1.3em;
   font-weight: 400;
   line-height: 50px;
-  letter-spacing: .05em; 
+  letter-spacing: .05em;
   color: #fff;
   text-align: left;
   text-transform: uppercase;
@@ -217,18 +207,15 @@ h1 {
     margin-bottom: 10px;
     background-color: #fff;
   }
-
   .logo-icon {
     display: none;
   }
-
   .logo {
     display: block;
     float: left;
     width: 14%;
     margin: 5% 3% 0;
   }
-
   .header-image {
     display: block;
     float: right;
@@ -237,13 +224,11 @@ h1 {
     background: url(../images/header-service-dogs.jpg) no-repeat left;
     background-size: cover;
   }
-
   .nav-menu-open {
     display: none;
     padding: 0;
     width: 0;
   }
-
   h1 {
     display: none;
   }
@@ -257,7 +242,6 @@ h1 {
 
 /*-------------------------------------*/
 /* NAVIGATION MENU */
-
 .nav-menu {
   position: fixed;
   top: 0;
@@ -367,17 +351,14 @@ h1 {
     -ms-transform: none;
     transform: none;
   }
-
   .nav-items {
     margin: 0 auto;
     text-align: center;
   }
-
   .nav-item {
     display: inline-block;
     border-bottom: 0;
   }
-
   a.nav-link {
     display: inline;
     padding: .6em .45em;
@@ -385,11 +366,9 @@ h1 {
     color: #fff;
     text-decoration: none;
   }
-
   .current-page {
     background-color: #aa0332;
   }
-  
   .nav-menu-close {
     display: none;
     width: 0;
@@ -408,7 +387,6 @@ h1 {
   a.nav-link {
     padding: .6em .9em;
   }
-
   a.nav-link:hover {
     background-color: #aa0332;
   }
@@ -419,7 +397,7 @@ h1 {
     position: relative;
     width: 102%;
     margin-left: -1%;
-  } 
+  }
 }
 
 @media screen and (min-width: 1270px) {
@@ -430,7 +408,6 @@ h1 {
 
 /*-------------------------------------*/
 /* SIDEBAR */
-
 .sidebar {
   position: relative;
   float: left;
@@ -454,7 +431,6 @@ h1 {
 
 /*-------------------------------------*/
 /* SIDEBAR - LINKS */
-
 .sidebar-link {
   display: block;
   margin-bottom: 1em;
@@ -484,7 +460,6 @@ h1 {
     padding: .5em;
     text-align: center;
   }
-
   .sidebar .sidebar-links a {
     float: left;
     width: 20%;
@@ -496,7 +471,6 @@ h1 {
     font-weight: 400;
     line-height: 1.4;
   }
-
   .sidebar-img {
     display: block;
     float: none;
@@ -511,13 +485,11 @@ h1 {
     text-align: center;
     background-color: #eee;
   }
-
   .sidebar .sidebar-links a {
     float: none;
     width: 100%;
     text-align: center;
   }
-
   .download {
     display: inline;
   }
@@ -525,7 +497,6 @@ h1 {
 
 /*-------------------------------------*/
 /* SIDEBAR - HIRING */
-
 .hiring-wrapper {
   display: table;
   width: 100%;
@@ -574,7 +545,6 @@ h1 {
 
 /*-------------------------------------*/
 /* MAIN CONTENT */
-
 .main-content {
   position: relative;
   padding: 25px 5%;
@@ -612,7 +582,6 @@ h1 {
 
 /*-------------------------------------*/
 /* FOOTER */
-
 footer {
   margin: 0;
   clear: both;
@@ -620,7 +589,6 @@ footer {
 
 /*-------------------------------------*/
 /* FOOTER - ADDRESS */
-
 address {
   position: relative;
   padding: 1.2em;
@@ -647,7 +615,6 @@ address {
     right: 25px;
     display: inline-block;
   }
-
   .social img {
     margin-left: 7px;
   }
@@ -657,12 +624,10 @@ address {
   footer {
     text-align: center;
   }
-
   address {
     padding: 0;
     text-align: center;
   }
-
   .address {
     position: relative;
     display: inline;
@@ -670,12 +635,10 @@ address {
     padding-left: .6em;
     line-height: 3.9em;
   }
-
   .social {
     position: static;
     margin-left: .6em;
   }
-
   .social img {
     position: relative;
     top: 10px;
@@ -686,12 +649,10 @@ address {
 }
 
 @media screen and (min-width: 1030px) {
-
   .address {
     padding: .6em 1em .7em;
     font-size: .9em;
   }
-
   .address:hover {
     color: #fff;
     background-color: #aa0332;
@@ -703,12 +664,11 @@ address {
     position: relative;
     width: 102%;
     margin-left: -1%;
-  } 
+  }
 }
 
 /*-------------------------------------*/
 /* FOOTER - COPYRIGHT */
-
 .copy-credit {
   padding: 1.2em;
   margin: 0 auto;
@@ -744,11 +704,9 @@ address {
   .copy-credit {
     text-align: center;
   }
-
   .copy-credit p {
     display: inline;
   }
-
   .pipe {
     display: inherit;
     padding-right: .5em;
@@ -764,21 +722,17 @@ address {
 
 /*-------------------------------------*/
 /* FOR SMALL SCREEN ONLY */
-
 @media screen and (max-width: 549px) {
   header.small {
     margin-bottom: 5px;
   }
-
-  .sidebar.small,
-  h1.small {
+  .sidebar.small, h1.small {
     display: none;
   }
 }
 
 /*-------------------------------------*/
 /* HOME PAGE */
-
 .article-img {
   float: right;
   margin-bottom: .3em;
@@ -797,11 +751,7 @@ img.dog-training {
   height: 145px;
 }
 
-img.calendar-2016 {
-  height: 115px;
-}
-
-img.camille {
+img.calendar-2016, img.camille {
   height: 115px;
 }
 
@@ -809,25 +759,21 @@ img.camille {
   .article-img {
     display: none;
   }
-
   .main-content article {
     display: table;
     margin: .2em 0;
     background-repeat: no-repeat;
   }
-
   .bark-bid {
     min-height: 220px;
     padding-left: 330px;
     background: url(../images/bark-bid-2016.jpg) left center;
   }
-
   .dog-training {
     min-height: 250px;
     padding-right: 200px;
     background: url(../images/dog-training.jpg) right center;
   }
-
   .camille {
     min-height: 220px;
     padding-left: 285px;
@@ -856,23 +802,19 @@ img.camille {
 
 /*-------------------------------------*/
 /* ABOUT US PAGE */
-
 .title {
   font-style: italic;
   color: #999;
 }
 
-.board-wrapper,
-.staff-wrapper {
+.board-wrapper, .staff-wrapper {
   margin-bottom: 1em;
 }
 
 @media screen and (min-width: 800px) {
-  .board-wrapper,
-  .staff-wrapper {
+  .board-wrapper, .staff-wrapper {
     float: left;
   }
-
   .board-wrapper {
     margin-right: 5em;
   }
@@ -880,7 +822,6 @@ img.camille {
 
 /*-------------------------------------*/
 /* IN THE NEWS PAGE */
-
 .news h5 {
   font-weight: 600;
 }
@@ -890,23 +831,18 @@ img.camille {
 }
 
 @media screen and (min-width: 600px) {
-  .newsletters .column1,
-  .newsletters .column2,
-  .newsletters .columen3 {
+  .newsletters .column1, .newsletters .column2, .newsletters .columen3 {
     display: inline-block;
     float: left;
     margin-bottom: 1.8em;
   }
-
-  .newsletters .column1,
-  .newsletters .column2 {
+  .newsletters .column1, .newsletters .column2 {
     margin-right: 7em;
   }
 }
 
 /*-------------------------------------*/
 /* DONATE PAGE */
-
 .donate-options a {
   display: block;
   height: 70px;
@@ -990,7 +926,6 @@ p.thank-you {
     width: 43%;
     margin-right: 4%;
   }
-
   .donate-content .column2 {
     float: right;
     width: 50%;
@@ -1002,7 +937,6 @@ p.thank-you {
 /* VOLUNTEER PAGE */
 /* BOARD AND GROOM PAGE */
 /* CONTACT US PAGE */
-
 .opportunities {
   margin-top: 1.5em;
   margin-bottom: -.4em;
@@ -1014,20 +948,16 @@ p.thank-you {
   font-weight: 400;
 }
 
-.vaccines,
-.days {
+.vaccines, .days {
   margin-top: 0;
 }
 
-.time-sheet,
-.call-us,
-.contact {
+.time-sheet, .call-us, .contact {
   color: #999;
   text-decoration: none;
 }
 
-.time-sheet,
-.call-us {
+.time-sheet, .call-us {
   display: block;
   margin-bottom: 1em;
   font-size: 1.4em;
@@ -1035,15 +965,13 @@ p.thank-you {
 }
 
 @media screen and (min-width: 1030px) {
-  .time-sheet:hover,
-  .call-us:hover {
+  .time-sheet:hover, .call-us:hover {
     color: #555;
   }
 }
 
 /*-------------------------------------*/
 /* CALENDAR PAGE */
-
 .events li {
   margin-left: 2em;
 }
@@ -1055,7 +983,6 @@ p.thank-you {
 
 /*-------------------------------------*/
 /* BARK AND BID PAGE */
-
 .bark-bid-announce {
   width: 100%;
   padding-bottom: 64.96063%;
@@ -1075,16 +1002,13 @@ p.thank-you {
     background-image: url(../images/bark-bid-announce-dog.svg);
     background-size: cover;
   }
-
   .image-divider {
     display: none;
   }
-  
   .convention-center {
     display: table;
     border-collapse: collapse;
   }
-
   .location {
     display: table-cell;
     width: 60%;
